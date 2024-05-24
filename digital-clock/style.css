@@ -1,0 +1,72 @@
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #8ecae6;
+    --main-sec-color: #37352f;
+    --main-border-color: #37352f;
+}
+
+[clock-data-theme="dark"] {
+    --main-bg-color: #2F3438;
+    --main-text-color: #8ecae6;
+    --main-sec-color: #fff;
+    --main-border-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--main-text-color);
+    font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif;
+}
+
+body {
+    margin: 40px auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+
+.clock {
+    min-height: 16em;
+    min-width: 16em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-size: cover;
+}
+
+.hour,
+.min {
+    font-size: 5em;
+}
+.divider {
+    font-size: 2.5em;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 358px;
+}
+
+#logo:hover {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:750px) {
+    #logo {
+        display: none;
+    }
+}
+
