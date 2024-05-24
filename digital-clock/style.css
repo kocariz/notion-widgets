@@ -43,10 +43,10 @@ body {
 
 .hour,
 .min {
-    font-size: 5em;
+    font-size: 8vw;
 }
 .divider {
-    font-size: 2.5em;
+    font-size: 4vw;
 }
 
 #logo {
@@ -70,3 +70,9 @@ body {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .clock {
+        min-height: 10em;
+        min-width: 10em;
+    }
+}
