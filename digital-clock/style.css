@@ -71,6 +71,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        font-size: 20px;
+    }
     .clock {
         min-height: 5em;
         min-width: 5em;
