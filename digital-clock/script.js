@@ -4,7 +4,7 @@ const min = document.querySelector('.min');
 const setClock = () => {
     let day = new Date();
     let hh = day.getHours() < 10 ? "0" + day.getHours().toString(): day.getHours().toString();
-    let mm = day.getMinutes().toString();
+    let mm = day.getMinutes() < 10 ? "0" + day.getMinutes().toString(): day.getMinutes().toString();
 
     hour.textContent = hh;
     min.textContent = mm;
