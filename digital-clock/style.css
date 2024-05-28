@@ -6,7 +6,7 @@
 }
 
 [clock-data-theme="dark"] {
-    --main-bg-color: #2F3438;
+    --main-bg-color: #000;
     --main-text-color: #8ecae6;
     --main-sec-color: #fff;
     --main-border-color: #fff;
@@ -24,7 +24,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
     background-color: var(--main-bg-color);
     overflow: hidden;
 }
@@ -43,10 +42,10 @@ body {
 
 .hour,
 .min {
-    font-size: 8vw;
+    font-size: 10rem;
 }
 .divider {
-    font-size: 4vw;
+    font-size: 7.5rem;
 }
 
 #logo {
@@ -64,18 +63,8 @@ body {
     transform: scale(1.1);
 }
 
-@media screen and (max-width:750px) {
+@media screen and (min-width:750px) {
     #logo {
         display: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 20px;
-    }
-    .clock {
-        min-height: 5em;
-        min-width: 5em;
     }
 }
