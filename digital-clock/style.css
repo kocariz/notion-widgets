@@ -42,10 +42,10 @@ body {
 
 .hour,
 .min {
-    font-size: 10rem;
+    font-size: 7.5rem;
 }
 .divider {
-    font-size: 7.5rem;
+    font-size: 5rem;
 }
 
 #logo {
